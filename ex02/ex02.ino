@@ -22,14 +22,11 @@ void loop() {
     ledState = !ledState;
     digitalWrite(ledPin, ledState);
     
-    if (ledState == HIGH)
-    {
-      Serial.println("LED ON");    // 串口输出提示
-    }
-    else
-    {
-      Serial.println("LED OFF");   // 串口输出提示
-    }
+    Serial.print("系统运行毫秒数：");
+    Serial.print(currentTime);
+    Serial.print(" | LED当前状态：");
+    Serial.println(ledState ? "点亮" : "熄灭");
   }
 }
 // 作业2：使用millis函数实现无阻塞1HzLED闪烁，不使用delay阻塞程序
+
