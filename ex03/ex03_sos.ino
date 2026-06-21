@@ -76,3 +76,5 @@ void runFlash(int n, unsigned long tOn)
     }
   }
 }
+// 作业3：millis无阻塞实现SOS灯光
+// 时序：3短闪S → 3长闪O → 3短闪S，整套结束停顿2秒循环
